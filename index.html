@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintCraft Solutions - Professional Printing Services | Industry Leader</title>
+    <meta name="description" content="PrintCraft Solutions - Leading printing company offering digital printing, offset printing, large format solutions, and custom services. Under the visionary leadership of Sangharsh Pawar, CEO.">
+    <meta name="keywords" content="printing services, digital printing, offset printing, business cards, wedding cards, banners, brochures">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">Sangharsh Printers</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar" role="navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1 class="company-name">SANGHARSH PRINTERS</h1>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" tabindex="0">
+                        <a href="#services" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="www.google.com">Posters</a></li>
+                            <li><a href="#services">Banners</a></li>
+                            <li><a href="#services">Visiting Cards</a></li>
+                            <li><a href="#services">Wedding Cards</a></li>
+                            <li><a href="#services">Registers</a></li>
+                            <li><a href="#services">Brochures</a></li>
+                            <li><a href="#services">Custom Printing</a></li>
+                            <li><a href="#services">Design Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" tabindex="0">
+                        <a href="#products" class="nav-link">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#services">Digital Printing</a></li>
+                            <li><a href="#services">Offset Printing</a></li>
+                            <li><a href="#services">Large Format Printing</a></li>
+                            <li><a href="#services">Packaging Solutions</a></li>
+                            <li><a href="#services">Commercial Printing</a></li>
+                            <li><a href="#services">Specialty Papers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown" tabindex="0">
+                        <a href="#help" class="nav-link">Help & Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#help">FAQ</a></li>
+                            <li><a href="#help">User Guide</a></li>
+                            <li><a href="#help">Technical Support</a></li>
+                            <li><a href="#help">Live Chat</a></li>
+                            <li><a href="#help">Video Tutorials</a></li>
+                            <li><a href="#help">Download Center</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#grievance" class="nav-link">Grievance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Auto-Sliding Carousel -->
+    <section class="hero" id="home">
+        <div class="slider-container" id="sliderContainer">
+            <div class="slide active" data-bg="digital-printing">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2 class="slide-title">Premium Digital Printing Solutions</h2>
+                        <p class="slide-description">State-of-the-art technology for exceptional quality and fast turnaround times</p>
+                        <div class="slide-buttons">
+                            <a href="#services" class="btn btn--primary">Explore Digital Services</a>
+                            <a href="#contact" class="btn btn--outline">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="business-materials">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2 class="slide-title">Professional Business Materials</h2>
+                        <p class="slide-description">Business cards, letterheads, and corporate branding that make an impact</p>
+                        <div class="slide-buttons">
+                            <a href="#services" class="btn btn--primary">View Business Solutions</a>
+                            <a href="#contact" class="btn btn--outline">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="large-format">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2 class="slide-title">Large Format Advertising</h2>
+                        <p class="slide-description">Banners, posters, and signage that command attention and drive results</p>
+                        <div class="slide-buttons">
+                            <a href="#services" class="btn btn--primary">Get Custom Quote</a>
+                            <a href="#contact" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="wedding-printing">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2 class="slide-title">Wedding & Event Printing</h2>
+                        <p class="slide-description">Elegant invitations and memorable keepsakes for your special occasions</p>
+                        <div class="slide-buttons">
+                            <a href="#services" class="btn btn--primary">Browse Wedding Collection</a>
+                            <a href="#contact" class="btn btn--outline">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="Go to slide 4"></button>
+        </div>
+        <div class="slider-arrows">
+            <button class="slider-arrow slider-arrow--prev" id="prevSlide" aria-label="Previous slide">‹</button>
+            <button class="slider-arrow slider-arrow--next" id="nextSlide" aria-label="Next slide">›</button>
+        </div>
+    </section>
+
+    <!-- Company Statistics -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Comprehensive Printing Solutions</h2>
+                <p>Professional printing services backed by cutting-edge technology and unmatched expertise</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🖨️</div>
+                    <h3 class="service-title">Digital Printing</h3>
+                    <p class="service-description">High-quality digital printing with fast turnaround times and cost-effective solutions for small to medium runs.</p>
+                    <ul class="service-features">
+                        <li>Quick turnaround</li>
+                        <li>Variable data printing</li>
+                        <li>Cost-effective for short runs</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3 class="service-title">Offset Printing</h3>
+                    <p class="service-description">Traditional offset printing for large volume projects with superior color accuracy and professional finish.</p>
+                    <ul class="service-features">
+                        <li>High volume printing</li>
+                        <li>Superior color quality</li>
+                        <li>Cost-effective for large runs</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Large Format Printing</h3>
+                    <p class="service-description">Wide format printing for banners, posters, vehicle wraps, and outdoor advertising materials.</p>
+                    <ul class="service-features">
+                        <li>Up to 16ft wide</li>
+                        <li>Indoor/outdoor materials</li>
+                        <li>UV-resistant inks</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Business Cards</h3>
+                    <p class="service-description">Premium business cards with various finishes, papers, and custom design options for professional networking.</p>
+                    <ul class="service-features">
+                        <li>Premium paper options</li>
+                        <li>Special finishes</li>
+                        <li>Custom design service</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💍</div>
+                    <h3 class="service-title">Wedding Invitations</h3>
+                    <p class="service-description">Elegant wedding invitations and stationery with luxury papers and personalized design services.</p>
+                    <ul class="service-features">
+                        <li>Luxury paper stocks</li>
+                        <li>Custom design</li>
+                        <li>Complete wedding packages</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3 class="service-title">Packaging Solutions</h3>
+                    <p class="service-description">Custom packaging design and printing for product boxes, labels, and promotional materials.</p>
+                    <ul class="service-features">
+                        <li>Custom die-cutting</li>
+                        <li>Food-safe materials</li>
+                        <li>Sustainable options</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📢</div>
+                    <h3 class="service-title">Promotional Materials</h3>
+                    <p class="service-description">Marketing collateral including brochures, flyers, catalogs, and promotional products.</p>
+                    <ul class="service-features">
+                        <li>Marketing expertise</li>
+                        <li>Bulk discounts</li>
+                        <li>Design consultation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3 class="service-title">Custom Registers</h3>
+                    <p class="service-description">Personalized notebooks, journals, and corporate registers with custom covers and layouts.</p>
+                    <ul class="service-features">
+                        <li>Custom layouts</li>
+                        <li>Binding options</li>
+                        <li>Corporate branding</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Certifications -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Certifications & Awards</h2>
+                <p>Committed to excellence and industry standards</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="certification-icon">🏆</div>
+                    <h4>ISO 9001:2015</h4>
+                    <p>Quality Management System</p>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">🌳</div>
+                    <h4>FSC Certified</h4>
+                    <p>Responsible Forestry</p>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">🎨</div>
+                    <h4>FESPA Member</h4>
+                    <p>Specialty Printing Association</p>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">🌱</div>
+                    <h4>Green Printing Initiative</h4>
+                    <p>Environmental Responsibility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by businesses and individuals across the industry</p>
+            </div>
+            <div class="testimonials-slider">
+                <!-- Each testimonial-slide represents a client comment -->
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Wedding client testimonial -->
+                            "PrintCraft Solutions delivered exceptional quality wedding invitations for our special day. The attention to detail and customer service was outstanding."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Priya & Raj Sharma</strong>
+                            <span>Wedding Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Business owner testimonial -->
+                            "As a growing business, we needed reliable printing services. PrintCraft has been our go-to partner for all marketing materials. Highly recommended!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Amit Patel</strong>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Marketing manager testimonial -->
+                            "The large format banners for our trade show were perfect. Great quality, on-time delivery, and competitive pricing. Will definitely work with them again."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Johnson</strong>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional client comments with comments for clarity -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Event organizer testimonial -->
+                            "Excellent customer support and fast turnaround. The team at PrintCraft Solutions exceeded our expectations every step of the way."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Rohit Mehra</strong>
+                            <span>Event Organizer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Product manager testimonial -->
+                            "Our packaging design was brought to life with vibrant colors and premium materials. We will definitely recommend PrintCraft to others."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Neha Verma</strong>
+                            <span>Product Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            <!-- Small business owner testimonial -->
+                            "From brochures to business cards, every print job has been flawless. Thank you for your professionalism and creativity!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Sunil Gupta</strong>
+                            <span>Small Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End additional client comments -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Grievance Section -->
+    <section class="grievance" id="grievance">
+        <div class="container">
+            <div class="section-header">
+                <h2>Grievance Redressal System</h2>
+                <p>Your satisfaction is our priority. We are committed to resolving all concerns promptly and fairly.</p>
+            </div>
+            <div class="grievance-content">
+                <div class="grievance-info">
+                    <div class="grievance-card">
+                        <h3>Contact Grievance Officer</h3>
+                        <p><strong>Customer Relations Manager</strong></p>
+                        <p>📧 grievance@printcraftsolutions.com</p>
+                        <p>📞 +91 98765 43211</p>
+                    </div>
+                    <div class="grievance-card">
+                        <h3>Resolution Timeline</h3>
+                        <p>We aim to resolve all grievances within <strong>48-72 hours</strong> of receipt.</p>
+                        <p>Complex matters may require additional time, and we will keep you informed throughout the process.</p>
+                    </div>
+                    <div class="grievance-card">
+                        <h3>Escalation Process</h3>
+                        <p><strong>Level 1:</strong> Department Head</p>
+                        <p><strong>Level 2:</strong> CEO Office</p>
+                        <p>Each level has a 24-hour response commitment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Company Info</h3>
+                    <div class="company-mission">
+                        <p><strong>Mission:</strong> To deliver exceptional printing solutions that exceed customer expectations while maintaining the highest standards of quality, innovation, and environmental responsibility.</p>
+                    </div>
+                    <div class="certifications-footer">
+                        <p><strong>Certifications:</strong></p>
+                        <ul>
+                            <li>ISO 9001:2015</li>
+                            <li>FSC Certified</li>
+                            <li>FESPA Member</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Digital Printing</a></li>
+                        <li><a href="#services">Offset Printing</a></li>
+                        <li><a href="#services">Large Format</a></li>
+                        <li><a href="#services">Business Cards</a></li>
+                        <li><a href="#services">Wedding Cards</a></li>
+                        <li><a href="#services">Packaging</a></li>
+                        <li><a href="#services">Custom Registers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#help">FAQ</a></li>
+                        <li><a href="#help">Technical Support</a></li>
+                        <li><a href="#help">Live Chat</a></li>
+                        <li><a href="#help">User Guide</a></li>
+                        <li><a href="#help">Video Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal & Policy</h3>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#grievance">Grievance Policy</a></li>
+                        <li><a href="#refund">Refund Policy</a></li>
+                        <li><a href="#shipping">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Print Excellence Boulevard<br>Industrial Area, Mumbai 400001</p>
+                        <p>📞 Primary: +91 98765 43210</p>
+                        <p>📞 Support: +91 98765 43211</p>
+                        <p>✉️ info@printcraftsolutions.com</p>
+                        <p>🎧 support@printcraftsolutions.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <span>💼</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Facebook">
+                            <span>📘</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">
+                            <span>🐦</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 PrintCraft Solutions. All rights reserved.</p>
+                    <p class="ceo-attribution">Under the visionary leadership of <strong>Sangharsh Pawar, CEO</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add missing anchor targets for navigation and footer links -->
+    <section id="products" style="display:none;"></section>
+    <section id="privacy" style="display:none;"></section>
+    <section id="terms" style="display:none;"></section>
+    <section id="refund" style="display:none;"></section>
+    <section id="shipping" style="display:none;"></section>
+    <section id="portfolio" style="display:none;"></section>
+    <section id="about" style="display:none;"></section>
+
+    <script src="app.js"></script>
+</body>
+</html>
