@@ -6,9 +6,6 @@
   <title>Sangharsh Printers — Poster Printing Services</title>
   <meta name="description" content="High-quality poster printing, fast turnaround, custom sizes and finishes. Sangharsh Printers - Posters for events, marketing and art.">
   <style>
-    /* ----------------------
-       Simple, responsive CSS
-       ---------------------- */
     :root{
       --accent:#ff6b6b;
       --muted:#6b7280;
@@ -23,13 +20,11 @@
     body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
     .container{max-width:var(--max-width);margin:0 auto;padding:28px}
 
-    /* Header */
     header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
     .brand{display:flex;gap:12px;align-items:center}
     .logo{width:46px;height:46px;background:linear-gradient(135deg,var(--accent),#ffb86b);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
 
-    /* Hero */
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:18px 0}
     .hero h1{font-size:34px;margin:0 0 12px}
     .hero p{margin:0 0 18px;color:var(--muted)}
@@ -39,12 +34,10 @@
     .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06)}
     .hero-card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
 
-    /* Features */
     .features{display:flex;gap:12px;margin:18px 0}
     .feature{background:var(--card);flex:1;padding:14px;border-radius:10px;box-shadow:var(--shadow);text-align:center}
     .feature h4{margin:8px 0 0}
 
-    /* Gallery */
     .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}
     .poster{background:linear-gradient(180deg,#fff,#fcfcfd);padding:12px;border-radius:10px;box-shadow:var(--shadow);display:flex;flex-direction:column}
     .poster img{width:100%;height:220px;object-fit:cover;border-radius:8px}
@@ -52,22 +45,18 @@
     .price{font-weight:800;color:#0b1220}
     .small{font-size:13px;color:var(--muted)}
 
-    /* Pricing grid */
     .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
     .price-card{background:var(--card);padding:16px;border-radius:10px;box-shadow:var(--shadow)}
     .price-card h3{margin:0 0 8px}
 
-    /* Contact */
     .contact{display:grid;grid-template-columns:1fr 420px;gap:18px;margin:24px 0}
     form{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
     label{display:block;font-weight:600;margin-bottom:6px}
     input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ee;margin-bottom:12px;font-size:14px}
     textarea{min-height:120px;resize:vertical}
 
-    /* Footer */
     footer{padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
 
-    /* Responsive tweaks */
     @media (max-width:880px){
       .hero,.contact{grid-template-columns:1fr}
       .hero img{max-width:100%}
@@ -76,10 +65,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
     <header>
       <div class="brand">
-        <div class="logo">BP</div>
+        <div class="logo">SP</div>
         <div>
           <div style="font-weight:800">Sangharsh Printers</div>
           <div style="font-size:12px;color:var(--muted)">Posters • Banners • Large-format</div>
@@ -93,7 +81,6 @@
       </nav>
     </header>
 
-    <!-- Hero -->
     <section class="hero">
       <div>
         <h1>Top-quality poster printing — fast turnaround</h1>
@@ -103,7 +90,6 @@
           <button class="btn btn-ghost">Request a Quote</button>
         </div>
 
-        <!-- Features row -->
         <div class="features" id="services">
           <div class="feature">
             <div style="font-size:20px;font-weight:800">Fast Turnaround</div>
@@ -120,7 +106,6 @@
         </div>
       </div>
 
-      <!-- Example poster / quick order card -->
       <aside class="hero-card">
         <h3 style="margin:0 0 8px">Quick order</h3>
         <p class="small">Choose size, finish and quantity — we’ll email a proof before printing.</p>
@@ -149,13 +134,11 @@
       </aside>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery">
       <h2 style="margin:6px 0 12px">Poster gallery</h2>
       <div class="gallery">
-        <!-- Poster items: replace src with your images -->
         <div class="poster">
-          <img src="https://via.placeholder.com/600x800?text=Poster+1" alt="Poster 1">
+          <img src="https://images.unsplash.com/photo-1504457046788-250cdd4423d1?auto=format&fit=crop&w=600&q=80" alt="Event Poster Sample">
           <div class="meta">
             <div>
               <div style="font-weight:700">Event Poster</div>
@@ -166,7 +149,7 @@
         </div>
 
         <div class="poster">
-          <img src="https://via.placeholder.com/600x800?text=Poster+2" alt="Poster 2">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="Art Print Poster">
           <div class="meta">
             <div>
               <div style="font-weight:700">Art Print</div>
@@ -177,7 +160,7 @@
         </div>
 
         <div class="poster">
-          <img src="https://via.placeholder.com/600x800?text=Poster+3" alt="Poster 3">
+          <img src="https://images.unsplash.com/photo-1616627980240-43a1c4d70d5d?auto=format&fit=crop&w=600&q=80" alt="Promotional Poster">
           <div class="meta">
             <div>
               <div style="font-weight:700">Promo Poster</div>
@@ -188,7 +171,7 @@
         </div>
 
         <div class="poster">
-          <img src="https://via.placeholder.com/600x800?text=Poster+4" alt="Poster 4">
+          <img src="https://images.unsplash.com/photo-1589578527966-261f8f05e1b0?auto=format&fit=crop&w=600&q=80" alt="Outdoor Advertising Poster">
           <div class="meta">
             <div>
               <div style="font-weight:700">Outdoor Poster</div>
@@ -201,7 +184,6 @@
       </div>
     </section>
 
-    <!-- Pricing -->
     <section id="pricing">
       <h2 style="margin:6px 0 12px">Simple pricing</h2>
       <div class="pricing">
@@ -223,7 +205,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
       <div>
         <h2 style="margin:0 0 8px">Get a custom quote</h2>
@@ -260,5 +241,4 @@
   </div>
 </body>
 </html>
-
 
