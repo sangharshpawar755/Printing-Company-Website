@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrightPrints — Poster Printing Services</title>
+  <meta name="description" content="High-quality poster printing, fast turnaround, custom sizes and finishes. BrightPrints - Posters for events, marketing and art.">
+  <style>
+    /* ----------------------
+       Simple, responsive CSS
+       ---------------------- */
+    :root{
+      --accent:#ff6b6b;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --max-width:1100px;
+      --radius:12px;
+      --shadow: 0 6px 18px rgba(17,24,39,0.08);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;background:linear-gradient(135deg,var(--accent),#ffb86b);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:18px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .cta-row{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06)}
+    .hero-card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+    /* Features */
+    .features{display:flex;gap:12px;margin:18px 0}
+    .feature{background:var(--card);flex:1;padding:14px;border-radius:10px;box-shadow:var(--shadow);text-align:center}
+    .feature h4{margin:8px 0 0}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}
+    .poster{background:linear-gradient(180deg,#fff,#fcfcfd);padding:12px;border-radius:10px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .poster img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+    .poster .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .price{font-weight:800;color:#0b1220}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Pricing grid */
+    .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
+    .price-card{background:var(--card);padding:16px;border-radius:10px;box-shadow:var(--shadow)}
+    .price-card h3{margin:0 0 8px}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 420px;gap:18px;margin:24px 0}
+    form{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+    label{display:block;font-weight:600;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ee;margin-bottom:12px;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+
+    /* Footer */
+    footer{padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Responsive tweaks */
+    @media (max-width:880px){
+      .hero,.contact{grid-template-columns:1fr}
+      .hero img{max-width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">BP</div>
+        <div>
+          <div style="font-weight:800">BrightPrints</div>
+          <div style="font-size:12px;color:var(--muted)">Posters • Banners • Large-format</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Top-quality poster printing — fast turnaround</h1>
+        <p>From single art prints to bulk marketing posters. Custom sizes, premium paper, matte or glossy finishes, lamination and same-day printing available.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary">Order a Poster</button>
+          <button class="btn btn-ghost">Request a Quote</button>
+        </div>
+
+        <!-- Features row -->
+        <div class="features" id="services">
+          <div class="feature">
+            <div style="font-size:20px;font-weight:800">Fast Turnaround</div>
+            <div class="small">Same day / 24–48 hours for most sizes</div>
+          </div>
+          <div class="feature">
+            <div style="font-size:20px;font-weight:800">High Resolution</div>
+            <div class="small">Up to 2400 DPI on selected stock</div>
+          </div>
+          <div class="feature">
+            <div style="font-size:20px;font-weight:800">Custom Sizes</div>
+            <div class="small">A4 → A0 and oversized prints</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example poster / quick order card -->
+      <aside class="hero-card">
+        <h3 style="margin:0 0 8px">Quick order</h3>
+        <p class="small">Choose size, finish and quantity — we’ll email a proof before printing.</p>
+        <form style="margin-top:10px">
+          <label>Size</label>
+          <select>
+            <option>A3 (297 × 420 mm)</option>
+            <option>A2 (420 × 594 mm)</option>
+            <option>A1 (594 × 841 mm)</option>
+            <option>A0 (841 × 1189 mm)</option>
+            <option>Custom</option>
+          </select>
+          <label>Finish</label>
+          <select>
+            <option>Matte</option>
+            <option>Glossy</option>
+            <option>Laminated</option>
+          </select>
+          <label>Quantity</label>
+          <input type="number" min="1" value="1">
+          <div style="display:flex;gap:8px">
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+            <button type="button" class="btn btn-ghost">Upload File</button>
+          </div>
+        </form>
+      </aside>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2 style="margin:6px 0 12px">Poster gallery</h2>
+      <div class="gallery">
+        <!-- Poster items: replace src with your images -->
+        <div class="poster">
+          <img src="https://via.placeholder.com/600x800?text=Poster+1" alt="Poster 1">
+          <div class="meta">
+            <div>
+              <div style="font-weight:700">Event Poster</div>
+              <div class="small">A2 • Matte</div>
+            </div>
+            <div class="price">₹120</div>
+          </div>
+        </div>
+
+        <div class="poster">
+          <img src="https://via.placeholder.com/600x800?text=Poster+2" alt="Poster 2">
+          <div class="meta">
+            <div>
+              <div style="font-weight:700">Art Print</div>
+              <div class="small">A1 • Glossy</div>
+            </div>
+            <div class="price">₹450</div>
+          </div>
+        </div>
+
+        <div class="poster">
+          <img src="https://via.placeholder.com/600x800?text=Poster+3" alt="Poster 3">
+          <div class="meta">
+            <div>
+              <div style="font-weight:700">Promo Poster</div>
+              <div class="small">A3 • Laminated</div>
+            </div>
+            <div class="price">₹80</div>
+          </div>
+        </div>
+
+        <div class="poster">
+          <img src="https://via.placeholder.com/600x800?text=Poster+4" alt="Poster 4">
+          <div class="meta">
+            <div>
+              <div style="font-weight:700">Outdoor Poster</div>
+              <div class="small">Oversize • Weatherproof</div>
+            </div>
+            <div class="price">₹1200</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2 style="margin:6px 0 12px">Simple pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>A3 (297 × 420 mm)</h3>
+          <div class="small">Single-sided, matte finish</div>
+          <p style="margin:10px 0 0;font-size:20px;font-weight:800">From ₹70</p>
+        </div>
+        <div class="price-card">
+          <h3>A2 (420 × 594 mm)</h3>
+          <div class="small">Single-sided, glossy finish</div>
+          <p style="margin:10px 0 0;font-size:20px;font-weight:800">From ₹120</p>
+        </div>
+        <div class="price-card">
+          <h3>A1 (594 × 841 mm)</h3>
+          <div class="small">Ideal for shops and events</div>
+          <p style="margin:10px 0 0;font-size:20px;font-weight:800">From ₹380</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div>
+        <h2 style="margin:0 0 8px">Get a custom quote</h2>
+        <p class="small">Tell us your size, quantity and finish. We’ll reply within working hours (Mon–Sat).</p>
+
+        <form>
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+
+          <label for="requirements">Requirements</label>
+          <textarea id="requirements" placeholder="Size, quantity, finish, deadline"></textarea>
+
+          <label for="file">Upload design (optional)</label>
+          <input id="file" type="file">
+
+          <button class="btn btn-primary" type="submit">Send Request</button>
+        </form>
+      </div>
+
+      <aside class="hero-card">
+        <h3>Contact & shop info</h3>
+        <p class="small">BrightPrints, 45 Station Road, Pune, MH<br>Mon–Sat: 9:00 — 18:00</p>
+        <p style="margin-top:8px;font-weight:700">Phone: +91 86260 45369</p>
+        <p style="margin-top:6px;color:var(--muted)">We accept UPI, card payments & bank transfers.</p>
+      </aside>
+    </section>
+
+    <footer>
+      © 2025 BrightPrints — Poster printing made easy. Designed by BrightPrints Team
+    </footer>
+  </div>
+</body>
+</html>
