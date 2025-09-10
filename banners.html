@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sangharsh Printers — Banner Printing Services</title>
+  <meta name="description" content="Premium banner printing with vibrant colors, durable materials, and custom sizes. Sangharsh Printers - Banners for events, marketing, and business promotions.">
+  <style>
+    :root{
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --max-width:1200px;
+      --radius:14px;
+      --shadow:0 10px 25px rgba(0,0,0,0.08);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#111827;line-height:1.6;overflow-x:hidden}
+    .container{max-width:var(--max-width);margin:0 auto;padding:32px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;animation:fadeDown 1s ease-in-out}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:50px;height:50px;background:linear-gradient(135deg,var(--accent),#60a5fa);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px;box-shadow:var(--shadow);}
+    nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:600;transition:color .3s}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 500px;gap:32px;align-items:center;margin:20px 0;}
+    .hero h1{font-size:40px;margin-bottom:16px;animation:slideInLeft 1.2s ease}
+    .hero p{color:var(--muted);margin-bottom:24px;animation:slideInLeft 1.5s ease}
+    .btn{padding:14px 22px;border:none;border-radius:10px;font-weight:700;cursor:pointer;transition:transform .3s}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn:hover{transform:translateY(-3px)}
+    .hero img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);animation:zoomIn 1.2s ease}
+
+    .gallery{margin:40px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:12px;box-shadow:var(--shadow);transition:transform .4s}
+    .gallery img:hover{transform:scale(1.05)}
+
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:40px 0}
+    .feature{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);text-align:center;transition:transform .4s,box-shadow .4s}
+    .feature:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.12)}
+    .feature h3{margin-bottom:8px;color:var(--accent)}
+
+    .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:40px 0}
+    .price-card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);text-align:center}
+    .price-card h3{margin-bottom:8px;color:var(--accent)}
+
+    .contact{margin:40px 0;display:grid;grid-template-columns:1fr 400px;gap:24px}
+    form{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);animation:fadeUp 1.2s ease}
+    label{font-weight:600;margin-bottom:6px;display:block}
+    input,textarea,select{width:100%;padding:12px;margin-bottom:14px;border-radius:8px;border:1px solid #e5e7eb;font-size:14px}
+    textarea{min-height:120px}
+    .contact-info{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow);animation:fadeUp 1.5s ease}
+    #formStatus{margin-top:10px;font-weight:600}
+
+    footer{text-align:center;padding:20px;color:var(--muted);margin-top:40px}
+
+    @keyframes slideInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes zoomIn{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <div style="font-weight:800;font-size:20px">Sangharsh Printers</div>
+          <div style="font-size:12px;color:var(--muted)">Banners • Posters • Large-format</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#quick-order">Quick Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Durable & Vibrant Banner Printing</h1>
+        <p>Get your custom banners printed with vivid colors, weatherproof materials, and eye-catching designs — perfect for events, business promotions, and outdoor advertising.</p>
+        <a href="#quick-order"><button class="btn btn-primary">Order Your Banner</button></a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?auto=format&fit=crop&w=800&q=80" alt="Banner Printing Example">
+    </section>
+
+    <section id="gallery">
+      <h2 style="margin:20px 0">Banner Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=600&q=80" alt="Event Banner">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=600&q=80" alt="Outdoor Advertising Banner">
+        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Promotional Banner">
+        <img src="https://images.pexels.com/photos/7567440/pexels-photo-7567440.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Business Banner">
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature"><h3>Weatherproof</h3><p>Durable vinyl and fabric banners that withstand outdoor conditions.</p></div>
+      <div class="feature"><h3>Custom Sizes</h3><p>From small indoor banners to huge outdoor billboards.</p></div>
+      <div class="feature"><h3>Vivid Colors</h3><p>High-resolution printing with fade-resistant inks.</p></div>
+      <div class="feature"><h3>Fast Delivery</h3><p>Get your banners printed and shipped within 2–3 days.</p></div>
+    </section>
+
+    <section id="pricing">
+      <h2 style="margin:20px 0">Simple Pricing</h2>
+      <div class="pricing">
+        <div class="price-card"><h3>6ft × 3ft</h3><p>Matte Vinyl</p><p style="font-weight:800;font-size:20px">From ₹350</p></div>
+        <div class="price-card"><h3>8ft × 4ft</h3><p>Glossy Vinyl</p><p style="font-weight:800;font-size:20px">From ₹550</p></div>
+        <div class="price-card"><h3>10ft × 6ft</h3><p>Outdoor Flex</p><p style="font-weight:800;font-size:20px">From ₹900</p></div>
+      </div>
+    </section>
+
+    <section id="quick-order" class="contact">
+      <form id="quickOrderForm">
+        <h2 style="margin-bottom:10px">Quick Order</h2>
+        <label for="qsize">Banner Size</label>
+        <select name="size" id="qsize" required>
+          <option>6ft × 3ft</option>
+          <option>8ft × 4ft</option>
+          <option>10ft × 6ft</option>
+          <option>Custom</option>
+        </select>
+
+        <label for="qfinish">Finish</label>
+        <select name="finish" id="qfinish" required>
+          <option>Matte</option>
+          <option>Glossy</option>
+          <option>Laminated</option>
+        </select>
+
+        <label for="qquantity">Quantity</label>
+        <input type="number" id="qquantity" name="quantity" min="1" value="1" required>
+
+        <label for="qemail">Email</label>
+        <input type="email" id="qemail" name="email" placeholder="you@example.com" required>
+
+        <button type="submit" class="btn btn-primary">Submit Order</button>
+        <p id="formStatus"></p>
+      </form>
+      <div class="contact-info">
+        <h3>Quick Help</h3>
+        <p>Fill in size, finish, quantity & your email. We’ll confirm via mail and send a design proof before printing.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <form id="quoteForm">
+        <h2 style="margin-bottom:10px">Request a Quote</h2>
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="size">Banner Size</label>
+        <select id="size" name="size">
+          <option>6ft × 3ft</option>
+          <option>8ft × 4ft</option>
+          <option>10ft × 6ft</option>
+          <option>Custom</option>
+        </select>
+
+        <label for="message">Requirements</label>
+        <textarea id="message" name="requirements" placeholder="Describe your banner design, quantity, and deadline"></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Request</button>
+        <p id="quoteStatus"></p>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p>Sangharsh Printers, 45 Station Road, Pune, MH</p>
+        <p>Mon–Sat: 9:00 AM — 6:00 PM</p>
+        <p><strong>Phone:</strong> +91 86260 45369</p>
+        <p style="color:var(--muted)">We accept UPI, cards & bank transfers.</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Sangharsh Printers — Banner printing services. Designed by Sangharsh Printers Team
+    </footer>
+  </div>
+
+  <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwh-HiEaWCqiL7SUeUkygV_IosLhR4_ryVUzODZqT5opekdVqcCMMpCEkRXseMPxm_vEw/exec";
+
+  // Quick Order form
+  const quickForm = document.getElementById("quickOrderForm");
+  const quickStatus = document.getElementById("formStatus");
+
+  quickForm.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(quickForm) })
+      .then(response => {
+        if (response.ok) {
+          quickStatus.innerHTML = "✅ Order submitted successfully!";
+          quickForm.reset();
+        } else {
+          quickStatus.innerHTML = "❌ Server error!";
+        }
+      })
+      .catch(error => {
+        quickStatus.innerHTML = "❌ Error! Try again.";
+        console.error("Quick Order Error!", error.message);
+      });
+  });
+
+  // Quote form
+  const quoteForm = document.getElementById("quoteForm");
+  const quoteStatus = document.getElementById("quoteStatus");
+
+  quoteForm.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(quoteForm) })
+      .then(response => {
+        if (response.ok) {
+          quoteStatus.innerHTML = "✅ Quote request sent!";
+          quoteForm.reset();
+        } else {
+          quoteStatus.innerHTML = "❌ Server error!";
+        }
+      })
+      .catch(error => {
+        quoteStatus.innerHTML = "❌ Error! Try again.";
+        console.error("Quote Form Error!", error.message);
+      });
+  });
+</script>
+
+
+</body>
+</html>
